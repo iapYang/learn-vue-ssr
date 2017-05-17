@@ -4,7 +4,7 @@
   "description": "learn vue server side render",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node start.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/iapYang/learn-vue-ssr#readme",
   "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-plugin-html": "^2.0.3",
     "vue": "^2.3.3",
     "vue-server-renderer": "^2.3.3"
   }
