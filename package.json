@@ -1,0 +1,23 @@
+{
+  "name": "learn-vue-ssr",
+  "version": "0.0.0",
+  "description": "learn vue server side render",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://iapyang@github.com/iapYang/learn-vue-ssr.git"
+  },
+  "author": "iapYang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iapYang/learn-vue-ssr/issues"
+  },
+  "homepage": "https://github.com/iapYang/learn-vue-ssr#readme",
+  "dependencies": {
+    "vue": "^2.3.3",
+    "vue-server-renderer": "^2.3.3"
+  }
+}
