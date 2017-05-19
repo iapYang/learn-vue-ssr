@@ -3,33 +3,14 @@ const glob = require('glob');
 const fs = require('fs');
 const webpack = require('webpack');
 const postcssConfig = require('./postcss.config.js');
-const config = require('./config.js');
 
 // the folder put font
 const fontRegex = /(font+\/)/;
 
-const jsFiles = glob.sync('./dev/script/*.js');
-const entry = {};
-jsFiles.forEach((file, i) => {
-    entry[path.basename(file, '.js')] = ['babel-polyfill', file];
-});
-
-const eslintLoader = {
-    loader: 'eslint-loader',
-    options: {
-        failOnWarning: config.eslint,
-        failOnError: config.eslint,
-    },
-};
-const eslintLocal = path.join(process.cwd(), '.eslintrc');
-const eslintRemote = path.join(__dirname, '../.eslintrc');
-const eslintPath = fs.existsSync(eslintLocal) ? eslintLocal : eslintRemote;
-
 module.exports = {
-    entry,
     output: {
         path: path.join(process.cwd(), 'dist'),
-        filename: '[name].js',
+        filename: 'index.js',
     },
     module: {
         rules: [
@@ -37,7 +18,6 @@ module.exports = {
                 test: /\.js(x)?$/,
                 use: [
                     'babel-loader',
-                    eslintLoader,
                 ],
                 exclude: /node_module/,
             },
@@ -45,7 +25,6 @@ module.exports = {
                 test: /\.vue$/,
                 use: [
                     'vue-loader',
-                    eslintLoader,
                 ],
             },
             {
@@ -111,9 +90,6 @@ module.exports = {
                         localIdentName: '[path][name]---[local]---[hash:base64:5]',
                         camelCase: true,
                     },
-                },
-                eslint: {
-                    configFile: eslintPath,
                 },
             },
         }),
