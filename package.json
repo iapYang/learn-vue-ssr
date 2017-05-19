@@ -24,6 +24,7 @@
     "vue-server-renderer": "^2.3.3"
   },
   "devDependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "iapyang-vue-template": "^0.2.8"
   }
 }
