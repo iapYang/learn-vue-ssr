@@ -10,7 +10,7 @@ const fontRegex = /(font+\/)/;
 module.exports = {
     output: {
         path: path.join(process.cwd(), 'dist'),
-        filename: 'index.js',
+        filename: '[name].js',
     },
     module: {
         rules: [

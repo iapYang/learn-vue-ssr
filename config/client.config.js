@@ -1,10 +1,11 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
+const path = require('path');
 const baseConfig = require('./webpack.base.config');
 const VueSSRClientPlugin = require('vue-server-renderer/client-plugin');
 
 module.exports = merge(baseConfig, {
-    entry: 'entry-client.js',
+    entry: path.resolve(__dirname, '../entry-client.js'),
     plugins: [
         // Important: this splits the webpack runtime into a leading chunk
         // so that async chunks can be injected right after it.
