@@ -4,8 +4,8 @@
   "description": "learn vue server side render",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --progress --config ./config/client.config.js",
-    "start": "webpack --progress --config ./config/server.config.js"
+    "client": "webpack --progress --config ./config/webpack.client.config.js",
+    "server": "webpack --progress --config ./config/webpack.server.config.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,10 @@
   },
   "homepage": "https://github.com/iapYang/learn-vue-ssr#readme",
   "dependencies": {
-    "vue-server-renderer": "^2.3.3",
     "webpack-node-externals": "^1.6.0"
   },
   "devDependencies": {
     "express": "^4.15.3",
-    "iapyang-vue-template": "^0.2.8"
+    "iapyang-vue-template": "0.2.9"
   }
 }
