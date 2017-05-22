@@ -1,14 +1,8 @@
 <template>
-    <div>
+    <div id="app">
         hahahahahahahahahahahhahahhhahahaha
     </div>
 </template>
-
-<script>
-export default {
-  
-};
-</script>
 
 <style lang="scss">
 

@@ -9,7 +9,7 @@ export function createRouter () {
         mode: 'history',
         routes: [{
             path: '/',
-            component: require('../App.vue'),
+            component: require('../components/Foo.vue'),
         }],
     });
 }
