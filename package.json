@@ -20,7 +20,12 @@
   "dependencies": {
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-preset-env": "^1.5.0",
+    "compression": "^1.6.2",
+    "lru-cache": "^4.0.2",
+    "memory-fs": "^0.4.1",
+    "serve-favicon": "^2.4.3",
     "vue-style-loader": "^3.0.1",
+    "webpack-hot-middleware": "^2.18.0",
     "webpack-node-externals": "^1.6.0"
   },
   "devDependencies": {
