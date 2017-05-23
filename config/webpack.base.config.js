@@ -1,6 +1,4 @@
 const path = require('path');
-const glob = require('glob');
-const fs = require('fs');
 const webpack = require('webpack');
 const postcssConfig = require('./postcss.config.js');
 
