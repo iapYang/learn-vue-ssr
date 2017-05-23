@@ -83,8 +83,8 @@ module.exports = {
                 vue: {
                     postcss: postcssConfig.plugins,
                     loaders: {
-                        sass: 'style-loader!css-loader!postcss-loader!sass-loader?indentedSyntax',
-                        scss: 'style-loader!css-loader!postcss-loader!sass-loader',
+                        sass: 'vue-style-loader!css-loader!postcss-loader!sass-loader?indentedSyntax',
+                        scss: 'vue-style-loader!css-loader!postcss-loader!sass-loader',
                     },
                     cssModules: {
                         localIdentName: '[path][name]---[local]---[hash:base64:5]',
