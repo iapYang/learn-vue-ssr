@@ -4,6 +4,18 @@
     </div>
 </template>
 
+<script>
+if (process.browser) {
+    console.log(process);
+}
+
+
+export default {
+  
+};
+</script>
+
+
 <style lang="scss">
 
 </style>
